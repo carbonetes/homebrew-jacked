@@ -11,7 +11,7 @@ class Jacked < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/carbonetes/jacked/releases/download/v1.0.2/jacked_1.0.2_darwin_arm64.tar.gz"
-      sha256 "c0b707e3a48877dd4ec95e58a9ea7c1c72d9f154ef501b2ab23ddf5e5c18acf4"
+      sha256 "d16a78192b8f1950c567439346489fdc65a0dd9046fec954d7b357aaf0bbdae1"
 
       def install
         bin.install "jacked"
@@ -19,7 +19,7 @@ class Jacked < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/carbonetes/jacked/releases/download/v1.0.2/jacked_1.0.2_darwin_amd64.tar.gz"
-      sha256 "4b01a8207ebb47884f88853fa77b093e24a6b66a075df7c9b9b71cbea673c975"
+      sha256 "e4b13420e6a4172f0b2efbc161ac7839d6b118d96beadc5186a3614099f09ecc"
 
       def install
         bin.install "jacked"
@@ -30,7 +30,7 @@ class Jacked < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/carbonetes/jacked/releases/download/v1.0.2/jacked_1.0.2_linux_arm64.tar.gz"
-      sha256 "110b13f06b5e10a3794221225f00c46734a02b548f5e2ce5096d2e28f00935a5"
+      sha256 "8613496965d596d873d9d0ae27a316dab89dd17e19589c5d3eb870ac89e2358b"
 
       def install
         bin.install "jacked"
@@ -38,7 +38,7 @@ class Jacked < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/carbonetes/jacked/releases/download/v1.0.2/jacked_1.0.2_linux_amd64.tar.gz"
-      sha256 "46975f1333dcda9616ddc7dc53aacf66e8c57600a09d003e21c8d51327285772"
+      sha256 "d01fb5775ceb99ada3837e26414e76b65ff3060942b8e4bae337fd7fb01eb075"
 
       def install
         bin.install "jacked"
