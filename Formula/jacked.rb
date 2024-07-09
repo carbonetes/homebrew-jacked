@@ -5,21 +5,21 @@
 class Jacked < Formula
   desc "Jacked is an open-source vulnerability scanning tool designed to help you identify and mitigate security risks in your Container Images and File Systems."
   homepage "https://www.carbonetes.com/"
-  version "1.8.8"
+  version "1.9.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/carbonetes/jacked/releases/download/v1.8.8/jacked_1.8.8_darwin_arm64.tar.gz"
-      sha256 "c7df527e5aa1318dfc3e321cfc5fd42dd18068831bf4278f5913d6d4178de7ae"
+      url "https://github.com/carbonetes/jacked/releases/download/v1.9.0/jacked_1.9.0_darwin_arm64.tar.gz"
+      sha256 "d7bbb4792d8f4f1094740a0e100f98ab6bfd6f19b2509d87a2ec10ba5fe7f428"
 
       def install
         bin.install "jacked"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carbonetes/jacked/releases/download/v1.8.8/jacked_1.8.8_darwin_amd64.tar.gz"
-      sha256 "8209586ba3a6895df5b22aba59029ba3820a374158b324fd6262f88606f2d6a7"
+      url "https://github.com/carbonetes/jacked/releases/download/v1.9.0/jacked_1.9.0_darwin_amd64.tar.gz"
+      sha256 "bc450e7eb1fa534e4bc2f52d809a5e22f427576ef84febbc13fe406ea27f8c29"
 
       def install
         bin.install "jacked"
@@ -29,16 +29,16 @@ class Jacked < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/carbonetes/jacked/releases/download/v1.8.8/jacked_1.8.8_linux_arm64.tar.gz"
-      sha256 "e5cf2640a4cf999cad38b982486d1d0be5b026be09a2e7fff1f6633f99d268ab"
+      url "https://github.com/carbonetes/jacked/releases/download/v1.9.0/jacked_1.9.0_linux_arm64.tar.gz"
+      sha256 "4f494dad68add620006b12fb767076cecf1d173acc88a9762d6c44f2c7e8541a"
 
       def install
         bin.install "jacked"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carbonetes/jacked/releases/download/v1.8.8/jacked_1.8.8_linux_amd64.tar.gz"
-      sha256 "0ee3e91a651ce423ac50d46190ba0ed58a2de2985f5827971de7cf2b21448d44"
+      url "https://github.com/carbonetes/jacked/releases/download/v1.9.0/jacked_1.9.0_linux_amd64.tar.gz"
+      sha256 "4cc97689a7b6660c47a97a4134f8a55e7953ae9c34b1ed85cca1f6ea02e57f7c"
 
       def install
         bin.install "jacked"
